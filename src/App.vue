@@ -65,7 +65,6 @@ export default class App extends Vue {}
     text-align: center;
     font-family: "Microsoft Yahei", arial;
     .resume {
-      margin-top: 1rem;
       box-shadow: 0px 2px 7px 2px rgba($color: gray, $alpha: .8);
       background-color: white;
       .experience {
