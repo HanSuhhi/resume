@@ -1,0 +1,86 @@
+{
+  "id": "1666062",
+  "name": "resume",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5994010",
+      "name": "star",
+      "font_class": "star",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "6804508",
+      "name": "Button",
+      "font_class": "Button",
+      "unicode": "e8c5",
+      "unicode_decimal": 59589
+    },
+    {
+      "icon_id": "8370797",
+      "name": "project",
+      "font_class": "project",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6403474",
+      "name": "file",
+      "font_class": "file",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "11981519",
+      "name": "education",
+      "font_class": "education",
+      "unicode": "e94d",
+      "unicode_decimal": 59725
+    },
+    {
+      "icon_id": "637454",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "1422573",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "3483790",
+      "name": "年龄",
+      "font_class": "nianling",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "6756286",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "8474261",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "8843038",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    }
+  ]
+}
