@@ -27,50 +27,58 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-  #app {
-    overflow-x: hidden;
-    word-break: break-all;
-  }
-@media (min-width: 800px)  {
-  #app {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: auto;
+#app {
+  overflow-x: hidden;
+  word-break: break-all;
+}
+#app {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  // background-color: rgba($color: #F5F5F5, $alpha: 1.0);
+  text-align: center;
+  display: flex;
+  font-family: "Microsoft Yahei", arial;
+  .resume {
     width: 100%;
-    background-color: rgba($color: #F5F5F5, $alpha: 1.0);
-    text-align: center;
-    display: flex;
-    font-family: "Microsoft Yahei", arial;
+    margin-bottom: 2rem;
+    background-color: white;
+  }
+  @media screen and  (min-width: 768px) {
     .resume {
+      width: 750px;
       margin-top: 1rem;
       margin-bottom: 2rem;
       box-shadow: 3px 2px 7px 2px rgba($color: gray, $alpha: .8);
       background-color: white;
     }
-    aside {
-      flex: 1;
+  }
+  @media screen and (min-width: 992px) {
+    .resume {
+      width: 970px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 3px 2px 7px 2px rgba($color: gray, $alpha: .8);
+      background-color: white;
     }
   }
-}
-@media (max-width: 800px) {
-  #app {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background-color: rgba($color: #F5F5F5, $alpha: 1.0);
-    text-align: center;
-    font-family: "Microsoft Yahei", arial;
+  @media screen and (min-width: 1200px) {
     .resume {
-      box-shadow: 0px 2px 7px 2px rgba($color: gray, $alpha: .8);
+      width: 1030px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 3px 2px 7px 2px rgba($color: gray, $alpha: .8);
       background-color: white;
-      .experience {
-        padding-bottom: 1rem;
-      }
     }
+  }
+  aside {
+    flex: auto;
+  }
+}
+@media (max-width: 767px) {
+  #app {
     aside {
       display: none;
     }

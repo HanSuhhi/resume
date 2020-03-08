@@ -35,56 +35,58 @@ export default class Experience extends Vue {
 <style lang="scss" scoped>
 section {
   width: 100%;
-  padding-top: .6rem;
   word-break: break-all;
   .sub-division {
     position: relative;
-    top: .8rem;
-    left: -2%;
+    top: 1.4rem;
+    left: -1%;
   }
   header {
     margin: 1.4rem .8rem .8rem 1.9rem;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bolder;
-    margin: 2rem;
-    margin-bottom: 1rem;
+    // margin: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
     letter-spacing: 2px;
   }
   .player {
-    margin-left: 1.2rem;
+    margin: .3rem 0 0;
+    margin-left: 1.5rem;
     span {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 1000;
       letter-spacing: 1.5px;
       color: cadetblue;
     }
   }
   section, dd {
-      margin: .5rem;
-      margin-top: .8rem;
-      i {
-        font-size: 25px;
-        margin-left: 1rem;
+    letter-spacing: .5px;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    i {
+      font-size: 16px;
+      margin-left: 1rem;
+    }
+    span {
+      margin-left: .4rem;
+      font-size: 14px;
+      line-height: .4rem;
+      ::v-deep span{
+        color: cadetblue;
+        transition: all .5s;
       }
-      span {
-        margin-left: 1rem;
-        font-size: 18px;
-        line-height: 1.8rem;
-        ::v-deep span{
-          color: cadetblue;
-          transition: all .5s;
-        }
-        ::v-deep span:hover {
-          margin-right: .2rem;
-          margin-left: .2rem;
-        }
-        ::v-deep a:link {
-          color: cadetblue;
-        }
-        ::v-deep a:visited {
-          color: cadetblue;
-        }
+      ::v-deep span:hover {
+        margin-right: .2rem;
+        margin-left: .2rem;
       }
+      ::v-deep a:link {
+        color: cadetblue;
+      }
+      ::v-deep a:visited {
+        color: cadetblue;
+      }
+    }
     // margin: .5rem;
     // margin-top: .8rem;
     // i {

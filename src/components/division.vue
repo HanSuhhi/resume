@@ -1,7 +1,7 @@
 <template>
 <div class="division">
   <span class="left" v-show="left">{{ left }}</span>
-  <span class="right" v-if="right">{{ right }}</span>
+  <!-- <span class="right" v-if="right">{{ right }}</span> -->
 </div>
 </template>
 

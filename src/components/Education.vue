@@ -36,25 +36,25 @@ export default class Education extends Vue {
   private university = '中国矿业大学(211)';
   private major = '管理学院 | 电子商务系';
   private experiences: string[] = [
-    '管理学院商务智能实验室 | 前端组成员',
-    '熟悉MVMM框架<span>Vue.js</span>，进行多次项目开发',
-    '熟悉JavaScript(含ES6)基本API, 了解使用TypeScript+vue进行开发',
-    '熟悉html5语义标签，了解W3C标准,',
-    '了解css及css3常用样式, 了解sass并运用scss进行样式开发，具有可读性',
-    '了解微信小程序开发，有过单人项目经历',
-    '了解Java后端流程，利用SpringBoot进行过简单接口开发',
-    '了解Node.js事件驱动模型，运用Nest.js + MongoDB进行个人博客开发',
-    '了解计算机网络七层架构及相应协议，了解HTTP工作原理',
+    '管理学院商务智能实验室 | 前端组成员 | 参与多项实验室项目，帮助其他组员解决相关开发问题',
+    '熟悉 MVMM 框架<span> Vue.js </span>，并进行多次项目开发，了解router、axios、vuex等相关组件使用',
+    '熟悉 JavaScript (含 ES6 )及基本 API 使用, 了解使用<span> TypeScript </span> + vue 进行项目开发',
+    '熟悉 JavaScript 中 this 指针、异步编程、promise 等相关内容',
+    '熟悉 html5 语义标签，了解 W3C 标准,利用语义标签、flex布局等实现较为复杂的页面布局',
+    '了解 css常用样式, 了解 sass 并运用 scss 进行样式开发，代码具有可读性，可以制作简单的动画设计',
+    '了解微信小程序开发，有过单人云开发项目经历，了解相关标签及其使用',
+    '了解 Java 后端开发，有利用 SSM 框架进行后台开发，前后端联调测试经历及相关项目',
+    '了解<span> Node.js </span>事件驱动模型，运用 Nest.js + MongoDB 进行个人博客开发， 了解 Node 模块化',
+    '了解计算机网络七层架构及相应协议，了解 HTTP 工作原理, 了解 git 基本操作',
   ]
-  // private experienceSecond = '江苏省体育健康产业创新创业大赛 一等奖 | 线上产品设计';
 }
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   section {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     text-align: left;
     width: 90%;
     header {
@@ -93,18 +93,39 @@ export default class Education extends Vue {
       }
       .sub-university {
         margin: 1.4rem .8rem .8rem 1.9rem;
-        font-size: 32px;
+        font-size: 22px;
         font-weight: bolder;
         letter-spacing: 2px;
       }
-      section, dd {
+      dd {
         margin: .5rem;
-        margin-top: .8rem;
+        margin-top: .6rem;
         i {
-          font-size: 25px;
+          font-size: 16px;
           margin-left: 1rem;
         }
         span {
+          margin-left: 1rem;
+          font-size: 16px;
+          ::v-deep span{
+            color: cadetblue;
+            transition: all .5s;
+          }
+          ::v-deep span:hover {
+            margin-right: .2rem;
+            margin-left: .2rem;
+          }
+        }
+      }
+      section {
+        margin: .5rem;
+        margin-bottom: 0;
+        i {
+          font-size: 18px;
+          margin-left: 1rem;
+        }
+        span {
+          font-weight: bold;
           margin-left: 1rem;
           font-size: 18px;
           ::v-deep span{
@@ -126,15 +147,14 @@ export default class Education extends Vue {
       border-radius: 100%;
       background-color: #343434;
       position: relative;
-      top: 1rem;
       left: -12px;
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   section {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: left;
     width: 90%;
     header {
@@ -170,24 +190,46 @@ export default class Education extends Vue {
       .sub-division {
         position: relative;
         top: .8rem;
-      }
+        }
       .sub-university {
         margin: 1.4rem .8rem .8rem 1.9rem;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: bolder;
         letter-spacing: 2px;
       }
-      section, dd {
+      dd {
         margin: .5rem;
-        margin-top: .8rem;
+        margin-top: .2rem;
         i {
-          font-size: 25px;
+          font-size: 16px;
           margin-left: 1rem;
         }
         span {
+          margin-left: .5rem;
+          font-size: 14px;
+          line-height: .2rem;
+          ::v-deep span{
+            color: cadetblue;
+            transition: all .5s;
+          }
+          ::v-deep span:hover {
+            margin-right: .2rem;
+            margin-left: .2rem;
+          }
+        }
+      }
+      section {
+        margin: .5rem;
+        margin-top: .2rem;
+        i {
+          font-size: 16px;
           margin-left: 1rem;
-          font-size: 18px;
-          line-height: 1.8rem;
+        }
+        span {
+          margin-left: .5rem;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: .2rem;
           ::v-deep span{
             color: cadetblue;
             transition: all .5s;
@@ -207,7 +249,6 @@ export default class Education extends Vue {
       border-radius: 100%;
       background-color: #343434;
       position: relative;
-      top: 1rem;
       left: -12px;
     }
   }
