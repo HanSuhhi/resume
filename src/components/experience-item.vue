@@ -53,6 +53,9 @@ section {
   .player {
     margin: .3rem 0 0;
     margin-left: 1.5rem;
+    margin-bottom: -.8rem;
+    width: 95%;
+    line-height: 30px;
     span {
       font-size: 18px;
       font-weight: 1000;

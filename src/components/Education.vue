@@ -8,14 +8,29 @@
   <article>
     <division class="sub-division" :left="studyingTime"></division>
     <section class="sub-university">{{ university }}</section>
-    <section>
+    <section class="major">
       <i class="iconfont icon-education"></i>
       <span>{{ major }}</span>
     </section>
     <dl>
+      <!-- P1 -->
       <dd v-for="item in experiences" :key="item.id">
         <i class="iconfont icon-file"></i>
         <span v-html="item"></span>
+      </dd>
+      <!-- P2 -->
+      <dd>
+        <h3 style="margin: 1rem .3rem;margin-left: 17px">技术能力</h3>
+      </dd>
+      <dd v-for="item in skills" :key="item.id" style="margin-left: 27px;font-size: 14px;">
+        <span v-html="item"></span>
+      </dd>
+      <!-- p3 -->
+      <dd>
+        <h3 style="margin: 1rem .3rem;margin-left: 17px">学生工作经验</h3>
+      </dd>
+      <dd v-for="item in department" :key="item.id">
+        <div v-html="item" style="margin-left: 17px; font-size: 14px"></div>
       </dd>
     </dl>
   </article>
@@ -36,16 +51,31 @@ export default class Education extends Vue {
   private university = '中国矿业大学(211)';
   private major = '管理学院 | 电子商务系';
   private experiences: string[] = [
-    '管理学院商务智能实验室 | 前端组成员 | 参与多项实验室项目，帮助其他组员解决相关开发问题',
-    '熟悉 MVMM 框架<span> Vue.js </span>，并进行多次项目开发，了解router、axios、vuex等相关组件使用',
-    '熟悉 JavaScript (含 ES6 )及基本 API 使用, 了解使用<span> TypeScript </span> + vue 进行项目开发',
-    '熟悉 JavaScript 中 this 指针、异步编程、promise 等相关内容',
-    '熟悉 html5 语义标签，了解 W3C 标准,利用语义标签、flex布局等实现较为复杂的页面布局',
-    '了解 css常用样式, 了解 sass 并运用 scss 进行样式开发，代码具有可读性，可以制作简单的动画设计',
-    '了解微信小程序开发，有过单人云开发项目经历，了解相关标签及其使用',
-    '了解 Java 后端开发，有利用 SSM 框架进行后台开发，前后端联调测试经历及相关项目',
-    '了解<span> Node.js </span>事件驱动模型，运用 Nest.js + MongoDB 进行个人博客开发， 了解 Node 模块化',
-    '了解计算机网络七层架构及相应协议，了解 HTTP 工作原理, 了解 git 基本操作',
+    '<b>实验室</b>： 管理学院商务智能实验室 | 前端组成员 ：参与多项实验室项目（前端）',
+    '<b>大创工作室</b>： i++工作室前端组组长，与其他组协同参与项目开发，已上线小程序一款',
+    '<b>相关课程</b>： 电子商务编程基础 <b>87</b> 、Web前端高级开发技术 <b>90</b> 、辅修计算机核心课程（高级语言程序设计、数据结构、计算机网络等）',
+    '<b>获奖经历</b>：“赢在徐州”跨境电商创业赛高校组一等奖 组长 <b>2018</b> | 第四届江苏省大学生体育健康产业创新创业大赛一等奖 线上产品 <b>2019</b>',
+  ]
+  private department: string[] = [
+    '<h3 style="font-size: 16px;letter-spacing: 1px;margin: .3rem">2017.10 - 2018.07 校宣传部干事</h3>',
+    '<li style="margin-left: 10px">做事积极： 完成微信推文30余篇，远超基本要求15篇</li>',
+    '<h3 style="font-size: 16px;letter-spacing: 1px;margin: .3rem">2018.09 - 2019.09 之江学社宣传部部长</h3>',
+    '<li style="margin-left: 10px">工作负责： 创立部门公众号、部员排版培训、构思创意主题3个、制作推文10余篇</li>',
+    '<li style="margin-left: 10px">性格外向： 随书记拜访市浙江商会，与对方宣传部门现场配合，当晚新闻见报</li>',
+  ];
+  private skills: string[] = [
+    '<i class="iconfont icon-file" style="margin-right: 1rem;font-size: 14px;margin-left: -20px;"></i><b>掌握前端基础能力</b>',
+    '熟悉前端开发语言：HTML、CSS(含 Sass )、JavaScript (含 ES6 )及基本 API 使用, 了解并使用<span> TypeScript </span>进行项目开发',
+    '<i class="iconfont icon-file" style="margin-right: 1rem;font-size: 14px;margin-left: -20px;"></i><b>有移动 Web 开发能力</b>',
+    '熟悉 MVVM 框架<span> Vue.js </span>及相关技术栈：axios、vuex等，了解常用模块化工具 Webpack， 了解 git 基本操作',
+    '根据自我理解实现瀑布流，实现首页推送瀑布流',
+    '<i class="iconfont icon-file" style="margin-right: 1rem;font-size: 14px;margin-left: -20px;"></i><b>有 Nodejs 开发能力</b>',
+    '熟悉 MVC, 了解<span> Node.js </span>事件驱动模型，运用 Nest.js + MongoDB 进行过个人博客开发',
+    '了解 Java 后端开发，利用 SSM 框架进行过后台开发',
+    '<i class="iconfont icon-file" style="margin-right: 1rem;font-size: 14px;margin-left: -20px;"></i><b>有小程序开发能力</b>',
+    '了解微信小程序开发，有个人小程序及合作开发小程序经历，了解相关标签及使用',
+    '<i class="iconfont icon-file" style="margin-right: 1rem;font-size: 14px;margin-left: -20px;"></i><b>一定计算机网络知识</b>',
+    '了解计算机网络七层架构及相应协议，了解 HTTP 工作原理',
   ]
 }
 </script>
@@ -78,7 +108,7 @@ export default class Education extends Vue {
       }
       p:nth-of-type(2) {
         color: CadetBlue;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bolder;
       }
     }
@@ -92,7 +122,7 @@ export default class Education extends Vue {
         top: .8rem;
       }
       .sub-university {
-        margin: 1.4rem .8rem .8rem 1.9rem;
+        margin: 1.4rem .8rem .8rem 1rem;
         font-size: 22px;
         font-weight: bolder;
         letter-spacing: 2px;
@@ -101,12 +131,12 @@ export default class Education extends Vue {
         margin: .5rem;
         margin-top: .6rem;
         i {
-          font-size: 16px;
+          font-size: 14px;
           margin-left: 1rem;
         }
         span {
           margin-left: 1rem;
-          font-size: 16px;
+          font-size: 14px;
           ::v-deep span{
             color: cadetblue;
             transition: all .5s;
@@ -135,6 +165,11 @@ export default class Education extends Vue {
           ::v-deep span:hover {
             margin-right: .2rem;
             margin-left: .2rem;
+          }
+          ::v-deep div {
+            h2, h3 {
+              margin: 0px;
+            }
           }
         }
       }
@@ -192,7 +227,7 @@ export default class Education extends Vue {
         top: .8rem;
         }
       .sub-university {
-        margin: 1.4rem .8rem .8rem 1.9rem;
+        margin: 1.4rem .8rem .8rem 1rem;
         font-size: 22px;
         font-weight: bolder;
         letter-spacing: 2px;
@@ -201,7 +236,7 @@ export default class Education extends Vue {
         margin: .5rem;
         margin-top: .2rem;
         i {
-          font-size: 16px;
+          font-size: 14px;
           margin-left: 1rem;
         }
         span {
@@ -216,18 +251,23 @@ export default class Education extends Vue {
             margin-right: .2rem;
             margin-left: .2rem;
           }
+          ::v-deep div {
+            ::v-deep h2, ::v-deep h3 {
+              margin: 0px;
+            }
+          }
         }
       }
       section {
         margin: .5rem;
         margin-top: .2rem;
         i {
-          font-size: 16px;
+          font-size: 14px;
           margin-left: 1rem;
         }
         span {
           margin-left: .5rem;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: bold;
           line-height: .2rem;
           ::v-deep span{
